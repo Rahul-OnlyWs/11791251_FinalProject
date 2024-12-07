@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Build the Docker image
+docker build --tag=khp_protocol .
+
+# Run the container
+docker run -it -p 1337:1337 --rm --name=khp_protocol khp_protocol
